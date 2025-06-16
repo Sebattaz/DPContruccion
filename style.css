@@ -1,7 +1,58 @@
 body{
     background-image: url('img/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 .contenedor{  
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+}
+.Titulo{
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgLogo{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .Titulo {
+        padding: 1rem;
+    }
+
+    .imgLogo {
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .imgLogo {
+        max-width: 80%;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .fa-person-running {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 820px) {
+  body {
+    background-position: center top; /* puede mover el fondo un poco hacia arriba */
+  }
 }
