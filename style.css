@@ -2,12 +2,17 @@ body{
     background-image: url('img/back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top;
     
 }
 .contenedor{  
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100vh;
+}
+h2{
+    color: red;
+    -webkit-text-stroke: 1px black;
 }
 .Titulo{
     height: auto;
@@ -16,12 +21,62 @@ body{
     align-items: center;
     justify-content: center;
 }
+.RRSS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;    
+    right: 20px;    
+    width: 300px; 
+    height: 100px;
+}
+
+.insta-icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf)
+}
+.insta-icon:after,
+.insta-icon:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #fff;
+  transform: translate(-50%, -50%);
+  content: ''
+}
+.insta-icon:before {
+  border-radius: 20%
+}
+.insta-icon:after {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%
+}
+
+.fa-person-running {
+        font-size: 2rem;
+    }
 
 .imgLogo{
     width: 100%;
     max-width: 500px;
     height: auto;
     object-fit: contain;
+}
+
+.motivacional{
+    color: rgb(185, 15, 15);
+    font-size: 18px;
+    margin: 8px auto;
+    width: min(90%, 448px);
+    text-align: center;
+    filter: drop-shadow(5px 5px 10px rgba(238, 18, 18, 0.5));
 }
 
 @media (max-width: 768px) {
@@ -35,6 +90,9 @@ body{
 
     h2 {
         font-size: 1.2rem;
+    }
+    .fa-person-running {
+        font-size: 2rem;
     }
 }
 
@@ -53,6 +111,9 @@ body{
 }
 @media (max-width: 820px) {
   body {
-    background-position: center top; /* puede mover el fondo un poco hacia arriba */
+    background-position: center top;
+  }
+  .imgLogo{
+    max-width: 70%;
   }
 }
